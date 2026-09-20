@@ -9,7 +9,7 @@ The core of this project is a rigorous 3-Way Match engine. In corporate finance,
 * **Dispatcher (`1_Dispatcher_Invoice_Ingestion`):** Scans directories, extracts relevant invoice metadata, and loads transaction items into UiPath Orchestrator Queues.
 * **Performer (`2_Performer_3Way_Match`):** Built on the REFramework to consume queue items and execute the sequential validation logic.
 
-<img width="1916" height="860" alt="image" src="https://github.com/user-attachments/assets/974edfee-8c72-44ed-8012-4726f5c7f003" />
+<img width="1916" height="860" alt="Decoupled Architecture" src="https://github.com/user-attachments/assets/2ad929bf-8d9c-4b6c-baea-6f16a12a9694" />
 
 ## Sequential Fail-Fast Business Logic
 Designed the validation logic to drop invalid transactions at the earliest stage to save compute time. The bot executes the following sequence:
@@ -24,3 +24,6 @@ Designed the validation logic to drop invalid transactions at the earliest stage
 * **UiPath Studio** (REFramework, Unattended Automation)
 * **UiPath Orchestrator** (Queues, Asset Management)
 * **Data Integration & Exception Handling**
+
+<img width="1517" height="927" alt="Tech Stack" src="https://github.com/user-attachments/assets/a46ff4cf-7a3f-463e-83a1-3f4be2b601c4" />
+
